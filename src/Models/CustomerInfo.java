@@ -6,12 +6,15 @@ public class CustomerInfo {
     private String customerPoneNum;
     private String customerEmailAddress;
 
-    public CustomerInfo(int customerID, String customerName, String customerPoneNum, String customerEmailAddress) {
+    public CustomerInfo(int customerID) {
         this.customerID = customerID;
         this.customerName = customerName;
         this.customerPoneNum = customerPoneNum;
         this.customerEmailAddress = customerEmailAddress;
     }
+
+
+
 
     public int getCustomerID() {
         return customerID;
