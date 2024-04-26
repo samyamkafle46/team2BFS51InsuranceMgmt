@@ -37,6 +37,8 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+
 /.metadata/.plugins/org.eclipse.core.resources/.projects/.org.eclipse.egit.core.cmp/.location
 /.metadata/.lock
 /.metadata/.log
@@ -70,3 +72,6 @@ build/
 /.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup
 /.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser
 /.metadata/.mylyn/.taskListIndex/write.lock
+
+bin/
+
