@@ -10,4 +10,5 @@ interface CustomerDAO {
     CustomerInfo getCustomerByID(int customerId);
     List<CustomerInfo> getAllCustomer();
 
+    CustomerInfo getCustomerById(boolean customerId);
 }
