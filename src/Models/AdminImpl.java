@@ -5,15 +5,16 @@ import java.util.List;
 public class AdminImpl implements AdminDAO {
     private CategoryDAO categoryDAO;
     private SubCategoryDAO subCategoryDAO;
-    private  PolicyDAO policyDAO;
+    PolicyDAO policyDAO;
 
     private  CustomerDAO customerDAO;
 
     public AdminImpl (){
-        categoryDAO = new CategoryDAOImpl();
-        subCategoryDAO = new SubcategoryDAOImpl();
-        policyDAO = new PolicyDAOImpl();
-        categoryDAO = new CustomerDAOImpl();
+        //categoryDAO = new CategoryDAOImpl();
+        //subCategoryDAO = new SubcategoryDAOImpl();
+        //policyDAO = new PolicyDAOImpl();
+        //categoryDAO = new CustomerDAOImpl();
+        customerDAO = new CustomerDAOImpl();
 
 
     }
