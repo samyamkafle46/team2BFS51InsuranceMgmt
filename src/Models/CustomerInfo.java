@@ -6,14 +6,13 @@ public class CustomerInfo {
     private String customerPoneNum;
     private String customerEmailAddress;
 
-    public CustomerInfo(int customerID) {
+    public CustomerInfo (int customerID, String customerName, String customerPoneNum,
+                         String customerEmailAddress) {
         this.customerID = customerID;
         this.customerName = customerName;
         this.customerPoneNum = customerPoneNum;
         this.customerEmailAddress = customerEmailAddress;
     }
-
-
 
 
     public int getCustomerID() {
