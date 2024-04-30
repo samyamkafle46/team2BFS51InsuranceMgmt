@@ -61,4 +61,10 @@ public class Policy {
     }
 
 
+    public boolean getCustomerId() {
+    }
+
+    public Object getPolicyId() {
+    }
 }
+

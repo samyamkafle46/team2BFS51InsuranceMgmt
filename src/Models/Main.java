@@ -47,7 +47,7 @@ public class Main {
                 case 2:
                     System.out.println("Enter your ID Number:");
                     int customerID = scanner.nextInt();
-                    CustomerInfo customerInfo = new CustomerInfo(customerID);
+                    CustomerInfo customerInfo = new CustomerInfo();
                     System.out.println("Customer Application");
                     System.out.println("1. View Categories");
                     System.out.println("2. View SubCategories");
@@ -66,7 +66,7 @@ public class Main {
                             Policy policy = admin.policyDAO.getPolicyById(policyNum);
                             if(policy != null){
                                 customerInfo.applyForPolicy(policy);
-                                System.out.println("Policy applied successfully!")
+                                System.out.println("Policy applied successfully!");
                             }else {
                                 System.out.println("Policy not found!");
                             }
