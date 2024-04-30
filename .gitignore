@@ -4,7 +4,7 @@ target/
 !**/src/test/**/target/
 
 ### IntelliJ IDEA ###
-.idea
+.idea/*
 .idea/modules.xml
 .idea/jarRepositories.xml
 .idea/compiler.xml
@@ -70,3 +70,4 @@ build/
 /.metadata/.plugins/org.eclipse.oomph.setup/workspace.setup
 /.metadata/.plugins/org.eclipse.m2e.core/workspaceState.ser
 /.metadata/.mylyn/.taskListIndex/write.lock
+bin/
