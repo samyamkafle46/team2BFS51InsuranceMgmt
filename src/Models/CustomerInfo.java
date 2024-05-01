@@ -64,7 +64,7 @@ public CustomerInfo(){
         }else{
             for (Category category : availableCategory) {
                 int categoryId = category.getCategoryId();
-                String categoryName = category.getCategoryName(categoryId);
+                String categoryName = category.getCategoryName();
                 if (categoryName != null) {
                     categories.add(categoryName);
 
@@ -86,7 +86,7 @@ public CustomerInfo(){
         } else {
             for (SubCategory subcategory : availableSubCategory) {
                 int subcategoryId = subcategory.getSubCategoryId();
-                String subcategoryName = subcategory.getSubCategoryName(subcategoryId);
+                String subcategoryName = subcategory.getSubCategoryName();
                 if (subcategoryName != null) {
                     subCategories.add(subcategoryName);
                 }

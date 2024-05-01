@@ -11,11 +11,6 @@ public interface PolicyDAO {
 
     void deletePolicy(Policy policyToDelete);
 
-    List<Policy> getAllBuyerPolicyRequests();
 
-    Policy getPolicyById(Object policyId);
-
-    void activateBuyerPolicy(CustomerInfo customer, Policy policy);
-
-    void cancelBuyerPolicyRequest(Policy requestToCancel);
+    Policy getPolicyId(int policyNum);
 }

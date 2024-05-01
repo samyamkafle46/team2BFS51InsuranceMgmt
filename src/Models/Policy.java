@@ -1,31 +1,36 @@
 package Models;
 
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.atomic.AtomicInteger;
+
 public class Policy {
-    private int policyTypeId;
+    private int policyId;
     private String policyName;
     private String policyDescription;
     private int amount;
     private int policyCoverageAmount;
-    private int categoryId;
+
+
 
     public Policy(int policyTypeId, String policyName, String policyDescription, int amount, int policyCoverageAmount) {
-        this.policyTypeId = policyTypeId;
+        this.policyId = policyTypeId;
         this.policyName = policyName;
         this.policyDescription = policyDescription;
         this.amount = amount;
         this.policyCoverageAmount = policyCoverageAmount;
-        this.categoryId = categoryId;
+
     }
     public Policy(){
 
     }
 
-    public int getPolicyTypeId() {
-        return policyTypeId;
+    public int getPolicyId() {
+        return policyId;
     }
 
-    public void setPolicyTypeId(int policyTypeId) {
-        this.policyTypeId = policyTypeId;
+    public void setPolicyTypeId(int policyId) {
+        this.policyId = policyId;
     }
 
     public String getPolicyName() {
@@ -61,10 +66,5 @@ public class Policy {
     }
 
 
-    public boolean getCustomerId() {
-    }
-
-    public Object getPolicyId() {
-    }
 }
 

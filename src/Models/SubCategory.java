@@ -8,10 +8,17 @@ public class SubCategory {
     private String subCategoryCoverageDetails;
     private Category parentCategory;
 
+    public SubCategory(String subCategoryName, String subCategoryCoverageDetails) {
+        this.subCategoryName = subCategoryName;
+        this.subCategoryCoverageDetails = subCategoryCoverageDetails;
+    }
     public SubCategory(int subCategoryId, String subCategoryName, String subCategoryCoverageDetails) {
         this.subCategoryId = subCategoryId;
         this.subCategoryName = subCategoryName;
         this.subCategoryCoverageDetails = subCategoryCoverageDetails;
+    }
+    public SubCategory(){
+
     }
 
     public int getSubCategoryId() {
@@ -22,7 +29,7 @@ public class SubCategory {
         this.subCategoryId = subCategoryId;
     }
 
-    public String getSubCategoryName(int subcategoryId) {
+    public String getSubCategoryName() {
         return subCategoryName;
     }
 
@@ -39,7 +46,7 @@ public class SubCategory {
     }
 
 
-    public List<SubCategory> getSubCategories() {
+
 
     }
-}
+

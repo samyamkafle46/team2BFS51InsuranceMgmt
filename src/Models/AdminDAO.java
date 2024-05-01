@@ -5,6 +5,5 @@ public interface AdminDAO {
     void manageCategories();
     void manageSubCategories();
     void managePolices();
-    void manageBuyerPolices();
 
 }
