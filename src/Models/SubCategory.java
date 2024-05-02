@@ -44,6 +44,13 @@ public class SubCategory {
     public void setSubCategoryCoverageDetails(String subCategoryCoverageDetails) {
         this.subCategoryCoverageDetails = subCategoryCoverageDetails;
     }
+    public String toString() {
+        return "SubCategory{" +
+                "subCategoryId=" + subCategoryId +
+                ", subcategoryName='" + subCategoryName + '\'' +
+                ", subcategoryCoverageDetails='" + subCategoryCoverageDetails + '\'' +
+                "}";
+    }
 
 
 

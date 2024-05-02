@@ -1,11 +1,14 @@
 package Models;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Scanner;
 
 public class AdminDAOImpl implements AdminDAO {
-    private CategoryDAO categoryDAO;
-    private SubCategoryDAO subCategoryDAO;
+    private static Map<String, String> adminCredentials = new HashMap<>();
+    CategoryDAO categoryDAO;
+    SubCategoryDAO subCategoryDAO;
     PolicyDAO policyDAO;
 
     private CustomerDAO customerDAO;
@@ -18,9 +21,11 @@ public class AdminDAOImpl implements AdminDAO {
         this.policyDAO = policyDAO;
         this.customerDAO = customerDAO;
         this.scanner1 =scanner1;
+        adminCredentials.put("admin", "password");
 
 
     }
+
 
     @Override
     public void viewUsers() {
@@ -176,5 +181,32 @@ public class AdminDAOImpl implements AdminDAO {
             }
         }
     }
+
+    public boolean authenticate(String username, String password) {
+        String storedPassword = adminCredentials.get(username);
+        if (storedPassword != null && storedPassword.equals(password)) {
+            return true;
+        } else {
+            System.out.println("Invalid username or password.");
+            return false;
+        }
+    }
+    public CustomerDAO getCustomerDAO() {
+        return customerDAO;
+    }
+    public CategoryDAO getCategoryDAO() {
+        return categoryDAO;
+    }
+
+    public SubCategoryDAO getSubCategoryDAO() {
+        return subCategoryDAO;
+    }
+
+    public PolicyDAO getPolicyDAO() {
+        return policyDAO;
+    }
+
+
 }
+
 

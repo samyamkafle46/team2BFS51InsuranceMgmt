@@ -55,5 +55,13 @@ public class Category {
     public void setCategoryDescription(String categoryDescription) {
         this.categoryDescription = categoryDescription;
     }
+    public String toString() {
+        return "Category: " +
+                "categoryId=" + categoryId +
+                ", categoryName='" + categoryName + '\'' +
+                ", categoryType='" + categoryType + '\'' +
+                ", categoryDescription='" + categoryDescription + '\''
+                ;
+    }
 
 }

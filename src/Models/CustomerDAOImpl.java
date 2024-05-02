@@ -1,10 +1,18 @@
 package Models;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class CustomerDAOImpl implements CustomerDAO {
     private List<CustomerInfo>customerInfoList = new ArrayList<>();
+    private static Map<String, String> customerCredentials = new HashMap<>();
+    public CustomerDAOImpl() {
+        customerCredentials.put("customer1", "pass1");
+        customerCredentials.put("customer2", "pass2");
+
+    }
 
 
     @Override
@@ -62,6 +70,17 @@ public class CustomerDAOImpl implements CustomerDAO {
         }
         return -1;
     }
+
+    public boolean authenticate(String username, String password) {
+        String storedPassword = customerCredentials.get(username);
+        if (storedPassword != null && storedPassword.equals(password)) {
+            return true;
+        } else {
+            return false;
+        }
     }
+
+
+}
 
 

@@ -65,6 +65,14 @@ public class Policy {
         this.policyCoverageAmount = policyCoverageAmount;
     }
 
+    @Override
+    public String toString() {
+        return "Policy ID: " + policyId +
+                "\nPolicy Name: " + policyName +
+                "\nPolicy Description: " + policyDescription +
+                "\nAmount: " + amount +
+                "\nPolicy Coverage Amount: " + policyCoverageAmount;
+    }
 
 }
 

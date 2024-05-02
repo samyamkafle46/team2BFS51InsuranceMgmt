@@ -9,17 +9,23 @@ public class CustomerInfo {
     private String customerName;
     private String customerPoneNum;
     private String customerEmailAddress;
+    private String username;
+    private String password;
     private Set <Category> availableCategory;
     private Set <SubCategory> availableSubCategory;
     private List<Policy>availablePolicies;
 
 
 
-    public CustomerInfo(int customerID, String customerName, String customerPoneNum, String customerEmailAddress) {
+    public CustomerInfo(int customerID, String customerName, String customerPoneNum, String customerEmailAddress,
+                        String username, String password) {
         this.customerID = customerID;
         this.customerName = customerName;
         this.customerPoneNum = customerPoneNum;
         this.customerEmailAddress = customerEmailAddress;
+        this.username = username;
+        this.password = password;
+
     }
 public CustomerInfo(){
 
@@ -70,7 +76,7 @@ public CustomerInfo(){
 
                 }
             }
-            System.out.println("Available Policy Categories: ");
+            System.out.println("Available Categories: ");
             for(String categoryName : categories){
                 System.out.println("-"+ categoryName);
             }
